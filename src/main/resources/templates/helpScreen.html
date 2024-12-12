@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Change Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body style="font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f7f7f7;">
+<div style="    max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <div style="display: flex;
+    align-items: center;">
+        <img src="https://cms.dev.electrolitemobility.com/public/electrolite_logo.png"
+             style="width: 200px; margin-left: 6%;" alt="logo">
+    </div>
+    <div style="    background-color: #F0F6FB;
+    border-radius: 5%;
+    padding: 7%;
+    margin-top: 6%;
+    font-family: Lato;
+    padding-bottom: 20%;">
+        <h1 style="color: #333333;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10%;
+      font-size: 32px;
+      font-family: Lato;
+      font-weight: 800;">Assistance Request</h1>
+        <p style="font-size: 18px;
+      flex-direction: row;
+      font-weight: bold;">Dear Team,</p>
+        <p style="font-size: 18px;
+      ">Please find below the support request from <span th:text="${user.firstName}"></span> <span th:text="${user.lastName}"></span>, <span th:text="${user.email}"></span></p>
+        <p style="font-size: 18px;
+      ">Description: <span th:text="${description}"></span></p>
+        <p style="font-size: 18px;
+      ">Vendor's Name:<span th:text="${vendor.name}"></span></p>
+    </div>
+</div>
+</body>
+</html>

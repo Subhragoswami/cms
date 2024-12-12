@@ -1,0 +1,2 @@
+ALTER TABLE PUBLIC.vendor_customer
+ALTER COLUMN mobile TYPE VARCHAR;
